@@ -1,0 +1,34 @@
+{
+  "name": "onethirtyone/aws-sns-handler",
+  "description": "Laravel package to handle incoming SNS messages",
+  "keywords": [
+    "laravel",
+    "SNS"
+  ],
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Robb Fountain",
+      "email": "robb@131studios.com"
+    }
+  ],
+  "require": {
+    "illuminate/support": "^7.0",
+    "aws/aws-php-sns-message-validator": "^1.5"
+  },
+  "require-dev": {
+    "phpunit/phpunit": "^8.5",
+    "orchestra/testbench": "^5.1"
+  },
+  "autoload": {
+    "psr-4": {
+      "OneThirtyOne\\Sns\\": "src/"
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "OneThirtyOne\\Sns\\Tests\\": "tests"
+    }
+  },
+  "minimum-stability": "stable"
+}
