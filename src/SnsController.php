@@ -35,6 +35,7 @@ class SnsController
     public function handle()
     {
         $message = Message::fromRawPostData();
+
         $validator = new MessageValidator();
 
         try {
