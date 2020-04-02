@@ -13,12 +13,13 @@
     }
   ],
   "require": {
-    "illuminate/support": "^7.0",
+    "illuminate/support": "~7.4.0",
     "aws/aws-php-sns-message-validator": "^1.5"
   },
   "require-dev": {
     "phpunit/phpunit": "^8.5",
-    "orchestra/testbench": "^5.1"
+    "orchestra/testbench": "^5.1",
+    "guzzlehttp/guzzle": "^6.5"
   },
   "autoload": {
     "psr-4": {
@@ -30,5 +31,12 @@
       "OneThirtyOne\\Sns\\Tests\\": "tests"
     }
   },
-  "minimum-stability": "stable"
+  "minimum-stability": "stable",
+  "extra": {
+    "laravel": {
+      "providers": [
+        "OneThirtyOne\\Sns\\SnsServiceProvider"
+      ]
+    }
+  }
 }
