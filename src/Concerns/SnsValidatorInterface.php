@@ -2,8 +2,6 @@
 
 namespace OneThirtyOne\Sns\Concerns;
 
-use Aws\Sns\Message;
-
 interface SnsValidatorInterface
 {
     /**
