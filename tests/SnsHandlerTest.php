@@ -9,7 +9,6 @@ use OneThirtyOne\Sns\Events\SnsSubscriptionConfirmation;
 use OneThirtyOne\Sns\Tests\Fakes\MessageFake;
 use OneThirtyOne\Sns\Validator;
 
-
 class SnsHandlerTest extends TestCase
 {
     /** @test */

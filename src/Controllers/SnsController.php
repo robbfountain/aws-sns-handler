@@ -10,8 +10,7 @@ use OneThirtyOne\Sns\Events\SnsEvent;
 use OneThirtyOne\Sns\Events\SnsSubscriptionConfirmation;
 
 /**
- * Class SnsController
- * @package OneThirtyOne\Sns\Controllers
+ * Class SnsController.
  */
 class SnsController
 {
@@ -39,7 +38,6 @@ class SnsController
         'Notification',
     ];
 
-
     /**
      * SnsController constructor.
      *
@@ -62,7 +60,7 @@ class SnsController
         try {
             $this->validator->validate($this->message->get());
         } catch (InvalidSnsMessageException $e) {
-            return response('SNS Message Validation Error: ' . $e->getMessage(), 404);
+            return response('SNS Message Validation Error: '.$e->getMessage(), 404);
         }
 
         if (in_array($this->message->Type, $this->confirmation)) {

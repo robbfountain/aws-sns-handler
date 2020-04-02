@@ -6,11 +6,10 @@ use Illuminate\Support\Facades\Event;
 use Illuminate\Support\Facades\Http;
 use OneThirtyOne\Sns\SnsServiceProvider;
 
-
 class TestCase extends \Orchestra\Testbench\TestCase
 {
     /**
-     * Setup
+     * Setup.
      */
     public function setUp(): void
     {
@@ -29,5 +28,4 @@ class TestCase extends \Orchestra\Testbench\TestCase
     {
         return [SnsServiceProvider::class];
     }
-
 }

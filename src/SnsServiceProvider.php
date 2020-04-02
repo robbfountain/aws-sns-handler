@@ -8,9 +8,8 @@ use OneThirtyOne\Sns\Concerns\SnsValidatorInterface;
 
 class SnsServiceProvider extends ServiceProvider
 {
-
     /**
-     * Register the Service Provider
+     * Register the Service Provider.
      *
      * @return void
      */
@@ -21,7 +20,7 @@ class SnsServiceProvider extends ServiceProvider
     }
 
     /**
-     * Boot the Service Provider
+     * Boot the Service Provider.
      *
      * @return void
      */
@@ -29,5 +28,4 @@ class SnsServiceProvider extends ServiceProvider
     {
         //
     }
-
 }

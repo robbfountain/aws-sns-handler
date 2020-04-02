@@ -1,14 +1,11 @@
 <?php
 
-
 namespace OneThirtyOne\Sns\Tests\Fakes;
-
 
 use OneThirtyOne\Sns\Concerns\SnsMessageInterface;
 
 /**
- * Class MessageFake
- * @package OneThirtyOne\Sns\Tests\Fakes
+ * Class MessageFake.
  */
 class MessageFake implements SnsMessageInterface
 {
@@ -24,11 +21,11 @@ class MessageFake implements SnsMessageInterface
      */
     public function __construct(array $type)
     {
-       $this->type = $type;
+        $this->type = $type;
     }
 
     /**
-     * @inheritDoc
+     * {@inheritdoc}
      */
     public function get()
     {
@@ -36,7 +33,7 @@ class MessageFake implements SnsMessageInterface
     }
 
     /**
-     * @inheritDoc
+     * {@inheritdoc}
      */
     public function __get($property)
     {

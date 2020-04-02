@@ -1,14 +1,11 @@
 <?php
 
-
 namespace OneThirtyOne\Sns;
-
 
 use OneThirtyOne\Sns\Concerns\SnsMessageInterface;
 
 /**
- * Class Message
- * @package OneThirtyOne\Sns
+ * Class Message.
  */
 class Message implements SnsMessageInterface
 {
@@ -26,7 +23,7 @@ class Message implements SnsMessageInterface
     }
 
     /**
-     * @inheritDoc
+     * {@inheritdoc}
      */
     public function get()
     {
@@ -34,7 +31,7 @@ class Message implements SnsMessageInterface
     }
 
     /**
-     * @inheritDoc
+     * {@inheritdoc}
      */
     public function __get($property)
     {

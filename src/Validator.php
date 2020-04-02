@@ -1,15 +1,12 @@
 <?php
 
-
 namespace OneThirtyOne\Sns;
-
 
 use Aws\Sns\MessageValidator;
 use OneThirtyOne\Sns\Concerns\SnsValidatorInterface;
 
 /**
- * Class Validator
- * @package OneThirtyOne\Sns
+ * Class Validator.
  */
 class Validator implements SnsValidatorInterface
 {
@@ -27,7 +24,7 @@ class Validator implements SnsValidatorInterface
     }
 
     /**
-     * @inheritDoc
+     * {@inheritdoc}
      */
     public function validate($message)
     {
