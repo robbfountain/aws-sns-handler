@@ -25,7 +25,7 @@ Since SNS messages are sent via a HTTP Post Request you will need to add your we
     ];
 ```
 
-##Usage
+## Usage
 Edit your ```routes/web.php``` and add a route to your the webhook handler
 ```php
 Route::any('callback', 'OneThirtyOne\Sns\SnsController@handle');
