@@ -1,6 +1,6 @@
 # Handle AWS SNS Messages in your Laravel Application
 
-[![Build Status](https://travis-ci.org/robbfountain/aws-sns-handler.svg?branch=master)](https://travis-ci.org/robbfountain/aws-sns-handler)
+[![Build Status](https://travis-ci.org/robbfountain/aws-sns-handler.svg?branch=master)](https://travis-ci.org/robbfountain/aws-sns-handler) [![StyleCI](https://github.styleci.io/repos/252278727/shield?branch=master)](https://github.styleci.io/repos/252278727)
 
 This is a Laravel package for validating and handling AWS SNS messages
 
