@@ -1,8 +1,6 @@
 <?php
 
-
 namespace OneThirtyOne\Sns;
-
 
 use Aws\Sns\Exception\InvalidSnsMessageException;
 use Aws\Sns\Message;
@@ -28,7 +26,7 @@ class SnsController
     ];
 
     /**
-     * Handle the HTTP Request from SNS Service
+     * Handle the HTTP Request from SNS Service.
      *
      * @return \Illuminate\Contracts\Routing\ResponseFactory|\Illuminate\Http\Response
      */
@@ -41,7 +39,7 @@ class SnsController
         try {
             $validator->validate($message);
         } catch (InvalidSnsMessageException $e) {
-            return response('SNS Message Validation Error: ' . $e->getMessage(), 404);
+            return response('SNS Message Validation Error: '.$e->getMessage(), 404);
         }
 
         if (in_array($message['Type'], $this->confirmation)) {
