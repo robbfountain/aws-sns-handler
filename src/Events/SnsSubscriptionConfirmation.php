@@ -11,14 +11,14 @@ class SnsSubscriptionConfirmation
     use Dispatchable, InteractsWithSockets, SerializesModels;
 
     /**
-     * The SNS Message
+     * The SNS Message.
      *
      * @var array
      */
     public $message;
 
     /**
-     * Create and Event Instance
+     * Create and Event Instance.
      *
      * @param $message
      */
