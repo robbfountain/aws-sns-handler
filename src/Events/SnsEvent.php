@@ -11,19 +11,12 @@ class SnsEvent
     use Dispatchable, InteractsWithSockets, SerializesModels;
 
     /**
-     * The SNS Message.
-     *
-     * @var array
-     */
-    public $message;
-
-    /**
      * Create and Event Instance.
      *
      * @param $message
      */
-    public function __construct($message)
+    public function __construct()
     {
-        $this->message = $message;
+        //
     }
 }

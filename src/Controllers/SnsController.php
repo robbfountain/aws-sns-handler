@@ -67,14 +67,14 @@ class SnsController
             $response = Http::get($this->message->SubscribeURL);
 
             if ($response->ok()) {
-                SnsSubscriptionConfirmation::dispatch($this->message);
+                SnsSubscriptionConfirmation::dispatch();
             }
 
             return response('OK', 200);
         }
 
         if (in_array($this->message->Type, $this->notification)) {
-            SnsEvent::dispatch($this->message);
+            SnsEvent::dispatch();
         }
 
         return response('OK', 200);

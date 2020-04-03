@@ -32,11 +32,7 @@ Route::any('callback', 'OneThirtyOne\Sns\Controllers\SnsController@handle');
 ```
 
 ### Events
-The package will fire an ```SnsSubscriptionConfirmation``` event when a new subscription is added and needs to be confirmed
-
-The package will fire an ```SnsEvent``` event when a message is delivered.
-
-Both of these events will receive a ```$message``` payload which will contain the full SNS message. 
+The package will fire an ```SnsSubscriptionConfirmation``` event when a new subscription is added and needs to be confirmed and will fire an ```SnsEvent``` event when a message is delivered after confirmation.
 
 You should listen for these events in your application.
 
